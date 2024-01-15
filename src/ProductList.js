@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 
-class Navi extends Component {
+class ProductList extends Component {
     render() {
         return (
             <div>
-                <h2>Navi Component</h2>
+                <h2>ProductList Component</h2>
             </div>
         );
     }
 }
 
-export default Navi;
-
-
+export default ProductList;
