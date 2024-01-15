@@ -6,13 +6,11 @@ class Category extends Component {
         return (
             <div>
               <h2>{this.props.title}</h2>
-                <ListGroup
-                    horizontal
-                >
+                <ListGroup>
                     <ListGroupItem>
                         Cras justo odio
                     </ListGroupItem>
-                    <ListGroupItem>
+                    <ListGroupItem active>
                         Dapibus ac facilisis in
                     </ListGroupItem>
                     <ListGroupItem>

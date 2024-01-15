@@ -12,10 +12,10 @@ function App() {
                 <Navi></Navi>
             </Row>
             <Row>
-                <Col xs="4">
+                <Col xs="3">
                     <Category title="Category List"></Category>
                 </Col>
-                <Col xs="8">
+                <Col xs="9">
                     <ProductList title="Product List"></ProductList>
                 </Col>
             </Row>
