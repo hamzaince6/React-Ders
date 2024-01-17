@@ -29,10 +29,10 @@ export default class Navi extends React.Component {
                   <NavLink tag={Link} to="/form1">Form Demo 1</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://www.garantibbva.com.tr/" target="_blank">Form Demo 2</NavLink>
+                  <NavLink href="https://www.garantibbva.com.tr/" target="_blank">Form Demo adsas2</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap" target="_blank">GitHub</NavLink>
+                  <NavLink href="https://github.com/reactstrap/reactstrap" target="_blank">GitHubfsdsd</NavLink>
                 </NavItem>
                 <CartSummary
                     removeFromCart={this.props.removeFromCart}
