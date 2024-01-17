@@ -26,7 +26,7 @@ export default class ProductList extends Component {
                 <th scope="row">{product.id}</th>
                 <td>{product.productName}</td>
                 <td>{product.unitPrice}</td>
-                <td>{product.quantityPerUnit}</td>
+                <td>{product.quantity}</td>
                 <td>{product.unitsInStock}</td>
                 <td><Button onClick={()=>this.props.addToCart(product)} color="info">add</Button></td>
               </tr>

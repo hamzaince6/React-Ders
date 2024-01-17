@@ -15,7 +15,8 @@ function Switch(props) {
   return null;
 }
 
-Switch.propTypes = {children: PropTypes.node};
+Switch.propTypes = { children: PropTypes.node };
+
 export default class App extends Component {
   state = { currentCategory: "", products: [], cart: [] };
 
@@ -24,6 +25,7 @@ export default class App extends Component {
   }
 
   changeCategory = category => {
+    category.categoryName = undefined;
     this.setState({ currentCategory: category.categoryName });
     this.getProducts(category.id);
   };
@@ -74,20 +76,18 @@ export default class App extends Component {
             </Col>
             <Col xs="9">
               <Switch>
-                <Route
-                  exact
-                  path="/"
-                  render={props => (
-                    <ProductList
-                      {...props}
-                      products={this.state.products}
-                      addToCart={this.addToCart}
-                      currentCategory={this.state.currentCategory}
-                      info={productInfo}
-                    />
-                  )}
-                />
                 <Routes>
+                  <Route
+                      path="/"
+                      element={
+                        <ProductList
+                            products={this.state.products}
+                            addToCart={this.addToCart}
+                            currentCategory={this.state.currentCategory}
+                            info={productInfo}
+                        />
+                      }
+                  />
                   <Route
                       path="/cart"
                       element={<CartList cart={this.state.cart} removeFromCart={this.removeFromCart} />}
